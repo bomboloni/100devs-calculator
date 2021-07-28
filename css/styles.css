@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: o;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 30px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#display {
+  background-color: palegoldenrod;
+  display: grid;
+  place-items: center right;
+}
+
+.button {
+  background-color: salmon;
+  display: grid;
+  place-items: center;
+}
+
+.calculator {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 300px repeat(20, 1fr);
+}
