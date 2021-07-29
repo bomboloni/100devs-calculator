@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: o;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -11,20 +11,87 @@ body {
   min-height: 100vh;
 }
 
-#display {
-  background-color: palegoldenrod;
+.calculator {
   display: grid;
+  height: 60vh;
+  /* width: 400px; */
+  gap: 10px;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr); */
+  grid-template-areas:
+    'display display display display'
+    '7       8       9      /'
+    '4       5       6      x'
+    '1       2       3      +'
+    '0       .       =      -';
+}
+
+.readout {
+  background-color: palegoldenrod;
+  /* display: grid; */
+  grid-area: 'display';
   place-items: center right;
 }
 
-.button {
+[class^='button-'] {
   background-color: salmon;
   display: grid;
   place-items: center;
 }
 
-.calculator {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 300px repeat(20, 1fr);
+.button-7 {
+  grid-area: '7';
+}
+
+.button-8 {
+  grid-area: '8';
+}
+
+.button-9 {
+  grid-area: '9';
+}
+
+.button-div {
+  grid-area: '/';
+}
+
+.button-4 {
+  grid-area: '4';
+}
+
+.button-5 {
+  grid-area: '5';
+}
+
+.button-6 {
+  grid-area: '6';
+}
+
+.button-x {
+  grid-area: 'x';
+}
+.button-1 {
+  grid-area: '1';
+}
+.button-2 {
+  grid-area: '2';
+}
+.button-3 {
+  grid-area: '3';
+}
+.button-add {
+  grid-area: '+';
+}
+
+.button-0 {
+  grid-area: '0';
+}
+.button-dot {
+  grid-area: '.';
+}
+.button-equals {
+  grid-area: '=';
+}
+.button-sub {
+  grid-area: '-';
 }
