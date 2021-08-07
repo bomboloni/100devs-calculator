@@ -61,10 +61,10 @@ h1 {
 
   grid-template-areas:
     'A A A A'
-    'B C D E'
-    'F G H I'
-    'J K L M'
-    'N O P R';
+    'B B B B'
+    'B B B B'
+    'B B B B'
+    'B B B B';
 }
 
 .readout {
@@ -73,6 +73,18 @@ h1 {
   display: grid;
   place-items: center end;
   grid-area: A;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-area: B;
+  grid-template-areas:
+    'B C D E'
+    'F G H I'
+    'J K L M'
+    'N O P R';
+  height: 100%;
+  width: 100%;
 }
 
 .opp {
