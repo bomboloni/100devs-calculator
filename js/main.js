@@ -1,3 +1,6 @@
+const calculator = document.querySelector('.calculator')
+const operator = document.querySelector('.operator')
+
 document.querySelector('#clears').addEventListener('click', clearDisplay)
 
 // set up click events for each number
